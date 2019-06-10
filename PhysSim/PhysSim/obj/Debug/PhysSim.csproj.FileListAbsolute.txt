@@ -1,0 +1,12 @@
+C:\Users\svorr\Nextcloud\Development\Typescript\PhysSim\PhysSim\bin\PhysSim.dll.config
+C:\Users\svorr\Nextcloud\Development\Typescript\PhysSim\PhysSim\bin\PhysSim.dll
+C:\Users\svorr\Nextcloud\Development\Typescript\PhysSim\PhysSim\bin\PhysSim.pdb
+C:\Users\svorr\Nextcloud\Development\Typescript\PhysSim\PhysSim\obj\Debug\PhysSim.csprojResolveAssemblyReference.cache
+C:\Users\svorr\Nextcloud\Development\Typescript\PhysSim\PhysSim\obj\Debug\PhysSim.dll
+C:\Users\svorr\Nextcloud\Development\Typescript\PhysSim\PhysSim\obj\Debug\PhysSim.pdb
+C:\Users\svorr\Nextcloud\Development\VS Projects\Typescript\PhysSim\PhysSim\bin\PhysSim.dll.config
+C:\Users\svorr\Nextcloud\Development\VS Projects\Typescript\PhysSim\PhysSim\bin\PhysSim.dll
+C:\Users\svorr\Nextcloud\Development\VS Projects\Typescript\PhysSim\PhysSim\bin\PhysSim.pdb
+C:\Users\svorr\Nextcloud\Development\VS Projects\Typescript\PhysSim\PhysSim\obj\Debug\PhysSim.csprojResolveAssemblyReference.cache
+C:\Users\svorr\Nextcloud\Development\VS Projects\Typescript\PhysSim\PhysSim\obj\Debug\PhysSim.dll
+C:\Users\svorr\Nextcloud\Development\VS Projects\Typescript\PhysSim\PhysSim\obj\Debug\PhysSim.pdb

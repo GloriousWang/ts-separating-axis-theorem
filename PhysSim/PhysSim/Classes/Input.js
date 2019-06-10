@@ -1,0 +1,111 @@
+var Input = (function () {
+    function Input() {
+    }
+    Input.keys = {};
+    Input.buttons = {};
+    /**
+     * Initializes the Input module
+     *
+     */
+    Input.init = function () {
+        Input.mousePos = new Vector2D(0, 0);
+        window.addEventListener("error", Input.onError);
+        window.addEventListener("keydown", Input.onKeyDown);
+        window.addEventListener("keyup", Input.onKeyUp);
+        window.addEventListener("mousedown", Input.onMouseDown);
+        window.addEventListener("mouseup", Input.onMouseUp);
+        window.addEventListener("mousemove", Input.onMouseMove);
+    };
+    /**
+     * Disposes the Input module
+     *
+     */
+    Input.dispose = function () {
+        window.removeEventListener("error", Input.onError);
+        window.removeEventListener("keydown", Input.onKeyDown);
+        window.removeEventListener("keyup", Input.onKeyUp);
+        window.removeEventListener("mousedown", Input.onMouseDown);
+        window.removeEventListener("mouseup", Input.onMouseUp);
+        window.removeEventListener("mousemove", Input.onMouseMove);
+        Input.keys = {};
+        Input.buttons = {};
+        Input.mousePos = null;
+    };
+    /**
+     * Handles not-handled error events
+     * @param {Object} event
+     *
+     */
+    Input.onError = function (event) {
+        throw event;
+    };
+    /**
+     * Handles keydown events and updates keystates
+     * @param {Object} event
+     *
+     */
+    Input.onKeyDown = function (event) {
+        Input.keys[event.code] = true;
+    };
+    /**
+     * Handles keyup events and updates keystates
+     * @param {Object} event
+     *
+     */
+    Input.onKeyUp = function (event) {
+        delete Input.keys[event.code];
+    };
+    /**
+     * Check whether a given key is down
+     * @param {String} code
+     *
+     */
+    Input.isKeyDown = function isKeyDown(code) {
+        return Input.keys[code] === true;
+    };
+    /**
+     * Handles mousedown events and updates buttonstates
+     * @param {Object} event
+     *
+     */
+    Input.onMouseDown = function (event) {
+        Input.buttons[event.button] = true;
+    };
+    /**
+     * Handles mouseup events and updates buttonstates
+     * @param {Object} event
+     *
+     */
+    Input.onMouseUp = function (event) {
+        delete Input.buttons[event.button];
+    };
+    /**
+     * Check whether a given button is down
+     * 0 = left click
+     * 1 = middle click
+     * 2 = right click
+     * @param {Number} button
+     *
+     */
+    Input.isButtonDown = function (button) {
+        return Input.buttons[button] === true;
+    };
+    /**
+     * Handles mouse movement and update mousePos
+     * @param {Object} event
+     *
+     */
+    Input.onMouseMove = function (event) {
+        Input.mousePos.x = event.clientX;
+        Input.mousePos.y = event.clientY;
+    };
+    /**
+     * Returns mousePos vector
+     *
+     */
+    Input.getMousePos = function () {
+        return Input.mousePos;
+    };
+    return Input;
+}());
+//# sourceMappingURL=Input.js.map
